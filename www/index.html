@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Run Tracker</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="topo-fixo z-depth-1">
+        <div class="valign-wrapper teal darken-4 white-text">
+            <h5 class="titulo">Run Tracker</h5>
+
+        </div>
+        <ul class="tabs teal darken-4">
+            <li class="tab">
+                <a href="#home"
+                   class="white-text waves-effect waves-light">
+                    Home
+                </a>
+            </li>
+            <li class="tab">
+                <a href="#gravaRota"
+                   class="white-text waves-effect waves-light">
+                    Gravar Rota
+                </a>
+            </li>
+            <li class="tab">
+                <a href="#mapa" id="tabMap"
+                   class="white-text waves-effect waves-light">
+                    Mapa das Rotas
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="home" class="section">
+		<button class="btnBlock waves-effect waves-light btn teal darken-4">			 
+			<form action="#" class="buttonForm ">
+				<p>
+					<input type="checkbox" class= "checkbox-white" id="cbInternet" />
+					<label for="cbInternet" id="lblInternet" class="white-text"><i class="material-icons left">cloud</i> Possui internet</label>
+				</p>
+			</form> 
+		</button>
+		<button id="limparDados" class="btnBlock waves-effect waves-light btn teal darken-4">
+			<i class="material-icons left">delete</i> Limpar histórico de rotas  
+		</button>
+		<button id="testarDados" class="btnBlock waves-effect waves-light btn teal darken-4">
+			<i class="material-icons left">settings_backup_restore</i> Carregar uma rota padrão  
+		</button>
+	</div>
+
+    <div id="mapa" class="section">
+		
+		<h6 class="container brown-text">Lista de Rotas Gravadas</h6>		
+        <div class="collection" id="lista_rotas">
+        </div>
+		
+	    <div id="panelMapa">
+			<h6 class="container brown-text" id="labelDistancia"></h6>		
+			<h6 class="container brown-text" id="labelTempo"></h6>		
+        
+			<div id="map"></div>
+		</div>
+    </div>
+
+    <div id="gravaRota" class="section">
+        <div class="input-field">
+			<input id="nome_rota" type="text" class="validate">
+			<label for="nome_rota">Insira uma identificação para a rota</label>
+        </div>		
+		<button id="gravarIniciar" class="btnBlock waves-effect waves-light btn teal darken-4">
+			<i class="material-icons left">play_arrow</i> Iniciar gravação de rota  
+		</button>
+		<button id="gravarParar" class="btnBlock waves-effect waves-light btn teal darken-4">
+			<i class="material-icons left">stop</i> Parar gravação de rota  
+		</button>
+		</br>
+		</br>
+	    <div class="row" id="listaLocalizacao">
+
+		</div>
+    </div>
+	
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+	<script src="cordova.js"></script>
+	<script src="js/index.js"></script>
+    <script  type="text/javascript" charset="utf-8" src="js/app.js"></script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZDPQzcfW9Xoa0ZFJVFrf6SoG8LJsgvhQ"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* estilo inicial */
+body {
+    background-color: #F2F2F2;
+}
+
+/* estilo do titulo */
+.titulo {
+    font-size: 1.3rem;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/* cor da aba */
+.tabs .indicator {
+    background-color: white;
+}
+
+/* fixo no topo */
+.topo-fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.section {
+    padding-top: 125px;
+}
+#map{
+	width: 100%;
+	height:350px;
+	display:block;
+	margin: 5px auto;
+	position: relative;
+}
+.buttonForm p{
+	margin :0px;
+}
+/*indigo*/
+.checkbox-indigo[type="checkbox"] + label:before{
+  border: 2px solid indigo;
+  background: transparent;
+}
+.checkbox-indigo[type="checkbox"]:checked + label:before{
+  border: 2px solid transparent;
+  border-bottom: 2px solid indigo;
+  border-right: 2px solid indigo;
+  background: transparent;
+}
+.checkbox-indigo.filled-in[type="checkbox"] + label:after{
+  border: 2px solid indigo;
+  background: transparent;
+}
+.checkbox-indigo.filled-in[type="checkbox"]:checked + label:after{
+  background: indigo;
+}
+.checkbox-indigo.filled-in[type="checkbox"]:checked + label:before{
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+/*white*/
+.checkbox-white[type="checkbox"] + label:before{
+  border: 2px solid white;
+  background: transparent;
+}
+.checkbox-white[type="checkbox"]:checked + label:before{
+  border: 2px solid transparent;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  background: transparent;
+}
+.checkbox-white.filled-in[type="checkbox"] + label:after{
+  border: 2px solid white;
+  background: transparent;
+}
+.checkbox-white.filled-in[type="checkbox"]:checked + label:after{
+  background: white;
+}
+.checkbox-white.filled-in[type="checkbox"]:checked + label:before{
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.btnBlock {
+	width:100%;
+	margin-bottom:5px;
+}
+.btnBlock  label{
+	width:100%;
+}

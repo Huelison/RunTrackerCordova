@@ -1,0 +1,25 @@
+{
+    "launch_path": "/index.html",
+    "installs_allowed_from": [
+        "*"
+    ],
+    "version": "1.0.0",
+    "name": "Teste",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "developer": {
+        "name": "Apache Cordova Team",
+        "url": "http://cordova.io"
+    },
+    "permissions": {
+        "contacts": {
+            "description": "Required for accessing address book.",
+            "access": "readwrite"
+        },
+        "systemXHR": {}
+    },
+    "type": "privileged",
+    "icons": {
+        "60": "/icon/icon-60.png",
+        "128": "/icon/icon-128.png"
+    }
+}
